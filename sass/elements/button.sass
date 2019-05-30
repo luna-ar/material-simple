@@ -1,0 +1,249 @@
+@import '../utilities/colors'
+
+$button-size: 14px !default
+$button-weight: 500 !default
+$button-spacing: 1.25px !default
+$button-case: uppercase !default
+
+.material-btn
+  box-sizing: border-box
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  -webkit-font-smoothing: antialiased
+  font-size: $button-size
+  font-weight: $button-weight
+  letter-spacing: $button-spacing
+  text-transform: $button-case
+  font-family: inherit
+  color: $white
+  user-select: none
+  height: 36px
+  margin: 0 8px 0 0
+  padding: 8px 16px
+  border-width: 0
+  border-color: transparent
+  border-radius: 4px
+  background: transparent
+  text-decoration: none
+  overflow: hidden
+  cursor: pointer
+  position: relative
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.18), 0 1px 5px 0 rgba(0,0,0,0.15)
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1)
+  will-change: transform, box-shadow, opacity, background-color
+  outline: none
+  display: flex
+  align-items: center
+
+  &:last-child
+    margin-right: 0
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border-radius: 4px
+    background-color: $white
+    opacity: 0
+    transition: opacity 0.25s ease
+    will-change: opacity
+
+  &:hover
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15)
+    
+    &:before
+      opacity: 0.08
+
+  &:focus
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15)
+
+    &:before
+      opacity: 0.16
+
+  &:active
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15)
+
+    &:before
+      opacity: 0.24
+
+  &:disabled
+    background: $black-alpha-12
+    box-shadow: none
+    color: $black-alpha-32
+    cursor: default
+  
+    &:hover
+      background: $black-alpha-12
+      box-shadow: none
+
+    &:focus
+      background: $black-alpha-12
+      box-shadow: none
+
+.material-btn__icon
+  margin-right: 8px
+  margin-left: -4px
+  font-size: 18px
+  width: 18px
+  height: 18px
+  display: inline-block
+  vertical-align: top
+
+.material-btn--alert
+  background-color: $alert
+
+.material-btn--success
+  background-color: $success
+
+.material-btn--primary
+  background-color: $primary
+
+.material-btn--warning
+  background-color: $warning
+
+.material-btn--muted
+  background-color: $muted
+
+.material-btn--flat
+  box-shadow: none
+  background-color: transparent
+  padding: 8px
+
+  .material-btn__icon
+    margin-left: 0
+
+  &.material-btn--primary
+    color: $primary
+    
+    &:before
+      background-color: $primary
+
+  &.material-btn--success
+    color: $success
+    
+    &:before
+      background-color: $success
+
+  &.material-btn--warning
+    color: $warning
+    
+    &:before
+      background-color: $warning
+
+  &.material-btn--alert
+    color: $alert
+    
+    &:before
+      background-color: $alert
+
+  &.material-btn--muted
+    color: $muted
+
+    &:before
+      background-color: $black
+
+  &:disabled
+    background-color: transparent
+    color: $black-alpha-32
+    cursor: default
+    pointer-events: none
+
+  &:hover
+    box-shadow: none
+
+  &:focus
+    box-shadow: none
+
+  &:active
+    box-shadow: none 
+
+.material-btn--float
+  height: 40px
+  width: 40px
+  align-items: center
+  justify-content: center
+  padding: 8px
+  border-radius: 50%
+
+  &:before
+    border-radius: 50%
+
+.material-btn--large.material-btn--float
+  padding: 16px
+  border-radius: 50%
+
+.material-btn--round
+  border-radius: 18px
+
+.material-btn--large.material-btn--round
+  border-radius: 30px
+
+.material-btn--outlined
+  border-style: solid
+  border-width: 2px
+  padding: 0 14px
+  background-color: transparent
+  color: $primary
+  border-color: $primary
+  box-shadow: none
+
+  &.material-btn--primary
+    color: $primary
+    border-color: $primary
+    
+    &:before
+      background-color: $primary
+
+  &.material-btn--success
+    color: $success
+    border-color: $success
+    
+    &:before
+      background-color: $success
+
+  &.material-btn--warning
+    color: $warning
+    border-color: $warning
+    
+    &:before
+      background-color: $warning
+
+  &.material-btn--alert
+    color: $alert
+    border-color: $alert
+    
+    &:before
+      background-color: $alert
+
+  &.material-btn--muted
+    color: $muted
+    border-color: $muted
+
+    &:before
+      background-color: $black
+
+  &:disabled
+    background-color: transparent
+    color: $black-alpha-32
+    border-color: $black-alpha-32
+    cursor: default
+    pointer-events: none
+
+  &:hover
+    box-shadow: none
+
+  &:focus
+    box-shadow: none
+
+  &:active
+    box-shadow: none 
+
+.material-btn--large
+  height: 48px
+  padding: 0 24px
+
+.material-btn--small
+  height: 32px
+  font-size: 13px

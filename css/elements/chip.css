@@ -1,0 +1,119 @@
+.material-chip-set {
+  box-sizing: border-box;
+  padding: 4px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.material-chip-set .material-chip {
+  margin: 4px;
+}
+
+.material-chip {
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  will-change: transform,opacity;
+  background: #E0E0E0;
+  border-radius: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  height: 32px;
+  padding: 7px 12px;
+  transition: all 0.25s ease;
+}
+
+.material-chip::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.material-chip:hover {
+  color: #000000;
+}
+
+.material-chip:hover::before {
+  opacity: 0.04;
+}
+
+.material-chip:focus {
+  outline: 0;
+  color: #000000;
+}
+
+.material-chip:focus::before {
+  opacity: 0.08;
+}
+
+.material-chip:active::before {
+  opacity: 0.16;
+}
+
+.material-chip--shaped {
+  border-radius: 4px;
+}
+
+.material-chip--activated {
+  color: #3F51B5;
+  background-color: #fff;
+}
+
+.material-chip--activated::before {
+  opacity: 0.12;
+  background-color: #3F51B5;
+}
+
+.material-chip--activated:hover {
+  color: #3F51B5;
+}
+
+.material-chip--activated:hover::before {
+  opacity: 0.16;
+}
+
+.material-chip--activated:focus {
+  color: #3F51B5;
+}
+
+.material-chip--activated:focus::before {
+  opacity: 0.20;
+}
+
+.material-chip--activated:active::before {
+  opacity: 0.28;
+}
+
+.material-chip--activated .material-chip__icon {
+  color: #3F51B5;
+}
+
+.material-chip__icon {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  margin: -4px 4px -4px -4px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.material-chip__text {
+  white-space: nowrap;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Nhc3MvZWxlbWVudHMvY2hpcC5zYXNzIiwiLi4vLi4vc2Fzcy91dGlsaXRpZXMvX2NvbG9ycy5zYXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVVBO0VBQ0UsdUJBQXNCO0VBQ3RCLGFBQVk7RUFDWixjQUFhO0VBQ2IsZ0JBQWU7Q0FHRzs7QUFQcEI7RUFPSSxZQUFXO0NBQUc7O0FBRWxCO0VBQ0Usb0NBQW1DO0VBQ25DLDhDQUEwQztFQUMxQywwQkFBaUI7S0FBakIsdUJBQWlCO01BQWpCLHNCQUFpQjtVQUFqQixrQkFBaUI7RUFDakIscUJBQW9CO0VBQ3BCLG9CQUFtQjtFQUNuQix1QkFBc0I7RUFDdEIsZ0JBQWU7RUFDZixpQkFBZ0I7RUFDaEIsbUJBQWtCO0VBQ2xCLCtCQUE4QjtFQUM5QixvQkM2TWlCO0VENU1qQixvQkF6QnVCO0VBMEJ2QiwyQkM1QndCO0VENkJ4QixnQkE1Qm1CO0VBNkJuQixrQkFBaUI7RUFDakIsaUJBQWdCO0VBQ2hCLGFBQVk7RUFDWixrQkFBaUI7RUFDakIsMkJBQTBCO0NBMkJOOztBQTlDdEI7RUFzQkksWUFBVztFQUNYLG1CQUFrQjtFQUNsQixPQUFNO0VBQ04sUUFBTztFQUNQLFlBQVc7RUFDWCxhQUFZO0VBQ1osMEJDNUNXO0VENkNYLFdBQVU7RUFDViwrQkFBOEI7Q0FBRzs7QUE5QnJDO0VBaUNJLGVDakRXO0NEb0RTOztBQXBDeEI7RUFvQ00sY0FBYTtDQUFHOztBQXBDdEI7RUF1Q0ksV0FBVTtFQUNWLGVDeERXO0NEMkRTOztBQTNDeEI7RUEyQ00sY0FBYTtDQUFHOztBQTNDdEI7RUE4Q0ksY0FBYTtDQUFHOztBQUVwQjtFQUNFLG1CQUFrQjtDQUFHOztBQUV2QjtFQUNFLGVDU21CO0VEUm5CLHVCQUFzQjtDQXNCYTs7QUF4QnJDO0VBS0ksY0FBYTtFQUNiLDBCQ0lpQjtDREp5Qjs7QUFOOUM7RUFTSSxlQ0NpQjtDREVHOztBQVp4QjtFQVlNLGNBQWE7Q0FBRzs7QUFadEI7RUFlSSxlQ0xpQjtDRFFHOztBQWxCeEI7RUFrQk0sY0FBYTtDQUFHOztBQWxCdEI7RUFxQkksY0FBYTtDQUFHOztBQXJCcEI7RUF3QkksZUNkaUI7Q0RjYzs7QUFFbkM7RUFDRSxZQUFXO0VBQ1gsYUFBWTtFQUNaLGdCQUFlO0VBQ2YsMkJBQTBCO0VBQzFCLDBCQ2hHd0I7Q0RnR0U7O0FBRTVCO0VBQ0Usb0JBQW1CO0NBQUciLCJmaWxlIjoiY2hpcC5jc3MifQ== */

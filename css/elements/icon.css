@@ -1,0 +1,42 @@
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: "liga" 1;
+          font-feature-settings: "liga" 1;
+}
+
+.material-icons.mi-18 {
+  font-size: 18px;
+}
+
+.material-icons.mi-24 {
+  font-size: 24px;
+}
+
+.material-icons.mi-36 {
+  font-size: 36px;
+}
+
+.material-icons.mi-48 {
+  font-size: 48px;
+}
+
+.material-icons.mi-light {
+  color: #fff;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Nhc3MvZWxlbWVudHMvaWNvbi5zYXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsOEJBQTZCO0VBQzdCLG9CQUFtQjtFQUNuQixtQkFBa0I7RUFDbEIsZ0JBQWU7RUFDZixzQkFBcUI7RUFDckIsZUFBYztFQUNkLHFCQUFvQjtFQUNwQix1QkFBc0I7RUFDdEIsa0JBQWlCO0VBQ2pCLG9CQUFtQjtFQUNuQixlQUFjO0VBQ2Qsc0NBQXNDO0VBQ3RDLG9DQUFtQztFQUNuQyxvQ0FBb0M7RUFDcEMsbUNBQWtDO0VBQ2xDLDBCQUEwQjtFQUMxQixtQ0FBa0M7RUFDbEMsd0NBQStCO1VBQS9CLGdDQUErQjtDQWViOztBQWpDcEI7RUFxQkksZ0JBQWU7Q0FBRzs7QUFyQnRCO0VBd0JJLGdCQUFlO0NBQUc7O0FBeEJ0QjtFQTJCSSxnQkFBZTtDQUFHOztBQTNCdEI7RUE4QkksZ0JBQWU7Q0FBRzs7QUE5QnRCO0VBaUNJLFlBQVc7Q0FBRyIsImZpbGUiOiJpY29uLmNzcyJ9 */

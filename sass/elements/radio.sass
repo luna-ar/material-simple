@@ -1,0 +1,107 @@
+@import '../utilities/colors'
+  
+$radio-color: $primary
+$radio-outer-circle-color: $black-alpha-60
+
+.material-radio
+  box-sizing: border-box
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  display: inline-block
+  position: relative
+  width: 40px
+  height: 40px
+  padding: 10px
+  cursor: pointer
+  will-change: opacity, transform, border-color, color
+
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $radio-color
+    opacity: 0
+    pointer-events: none
+    border-radius: 50%
+    z-index: 1
+    transition: opacity 0.25s ease, background-color 0.25s ease
+  
+  &:hover:before
+    opacity: 0.04
+
+  &:focus:before
+    opacity: 0.08
+
+  &:active:before
+    opacity: 0.16
+
+.material-radio__inner-circle,
+.material-radio__outer-circle,
+.material-radio__native-control
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+
+.material-radio__native-control
+  margin: 0
+  padding: 0
+  opacity: 0
+  cursor: inherit
+  z-index: 1
+
+.material-radio__background
+  display: inline-block
+  position: absolute
+  left: 10px
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  width: 50%
+  height: 50%
+
+.material-radio__outer-circle
+  box-sizing: border-box
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  border-radius: 50%
+  transition: border-color 0.25s cubic-bezier(.4,0,.6,1) 0ms
+  border-width: 2px
+  border-style: solid
+
+.material-radio__inner-circle
+  box-sizing: border-box
+  transform: scale(0)
+  transition: transform 0.25s cubic-bezier(.4,0,.6,1) 0ms, border-color 0.25s cubic-bezier(.4,0,.6,1) 0ms
+  border-width: 10px
+  border-style: solid
+  border-radius: 50%
+
+.material-radio
+
+  &__native-control
+
+    &:enabled
+
+      & + .material-radio__background .material-radio__inner-circle
+        border-color: $radio-color
+
+      &:checked
+
+        & + .material-radio__background .material-radio__outer-circle
+          border-color: $radio-color
+
+      &:not(:checked) + .material-radio__background .material-radio__outer-circle
+        border-color: $radio-outer-circle-color
+
+    &:checked
+
+      & + .material-radio__background .material-radio__inner-circle
+        transform: scale(.5)
+        transition: transform 0.25s cubic-bezier(0,0,.2,1) 0ms, border-color 0.25s cubic-bezier(0,0,.2,1) 0ms

@@ -1,0 +1,102 @@
+.material-typography--headline-1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 96px;
+  font-weight: 300;
+  line-height: 96px;
+  letter-spacing: -1.5px;
+}
+
+.material-typography--headline-2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+}
+
+.material-typography--headline-3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 48px;
+  letter-spacing: 0;
+}
+
+.material-typography--headline-4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 34px;
+  letter-spacing: 0.25px;
+}
+
+.material-typography--headline-5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 32px;
+  letter-spacing: 0;
+}
+
+.material-typography--headline-6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+}
+
+.material-typography--subtitle-1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+}
+
+.material-typography--subtitle-2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+}
+
+.material-typography--body-1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.material-typography--body-2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+.material-typography--caption {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+}
+
+.material-typography--button {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+}
+
+.material-typography--overline {
+  font-size: 10px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Nhc3MvZWxlbWVudHMvdHlwb2dyYXBoeS5zYXNzIiwiLi4vLi4vc2Fzcy91dGlsaXRpZXMvX3RleHQuc2FzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNFLGtDQUFpQztFQUNqQyxnQkNIb0I7RURJcEIsaUJDRnFCO0VER3JCLGtCQ0oyQjtFREszQix1QkNIeUI7Q0RHYTs7QUFFeEM7RUFDRSxrQ0FBaUM7RUFDakMsZ0JDTG9CO0VETXBCLGlCQ0pxQjtFREtyQixrQkNOMkI7RURPM0IsdUJDTHlCO0NES2E7O0FBRXhDO0VBQ0Usa0NBQWlDO0VBQ2pDLGdCQ1BvQjtFRFFwQixvQkNOd0I7RURPeEIsa0JDUjJCO0VEUzNCLGtCQ1BvQjtDRE9rQjs7QUFFeEM7RUFDRSxrQ0FBaUM7RUFDakMsZ0JDVG9CO0VEVXBCLG9CQ1J3QjtFRFN4QixrQkNWMkI7RURXM0IsdUJDVHlCO0NEU2E7O0FBRXhDO0VBQ0Usa0NBQWlDO0VBQ2pDLGdCQ1hvQjtFRFlwQixvQkNWd0I7RURXeEIsa0JDWjJCO0VEYTNCLGtCQ1hvQjtDRFdrQjs7QUFFeEM7RUFDRSxrQ0FBaUM7RUFDakMsZ0JDYm9CO0VEY3BCLGlCQ1pxQjtFRGFyQixrQkNkMkI7RURlM0IsdUJDYnlCO0NEYWE7O0FBRXhDO0VBQ0Usa0NBQWlDO0VBQ2pDLGdCQ2RvQjtFRGVwQixvQkNkd0I7RURleEIsa0JDZDJCO0VEZTNCLHVCQ2R5QjtDRGNhOztBQUV4QztFQUNFLGtDQUFpQztFQUNqQyxnQkNoQm9CO0VEaUJwQixpQkNoQnFCO0VEaUJyQixrQkNoQjJCO0VEaUIzQixzQkNoQndCO0NEZ0JjOztBQUV4QztFQUNFLGtDQUFpQztFQUNqQyxnQkNqQmdCO0VEa0JoQixvQkNqQm9CO0VEa0JwQixrQkNqQnVCO0VEa0J2QixzQkNqQm9CO0NEaUJjOztBQUVwQztFQUNFLGtDQUFpQztFQUNqQyxnQkNuQmdCO0VEb0JoQixvQkNuQm9CO0VEb0JwQixrQkNuQnVCO0VEb0J2Qix1QkNuQnFCO0NEbUJhOztBQUVwQztFQUNFLGtDQUFpQztFQUNqQyxnQkNwQmlCO0VEcUJqQixvQkNwQnFCO0VEcUJyQixrQkNwQndCO0VEcUJ4QixzQkNwQnFCO0NEb0JjOztBQUVyQztFQUNFLGdCQUFlO0VBQ2YsaUJBQWdCO0VBQ2hCLDBCQUF5QjtFQUN6Qix1QkFBc0I7Q0FBRzs7QUFFM0I7RUFDRSxnQkFBZTtFQUNmLG9CQUFtQjtFQUNuQiwwQkFBeUI7RUFDekIsc0JBQXFCO0NBQUciLCJmaWxlIjoidHlwb2dyYXBoeS5jc3MifQ== */

@@ -1,0 +1,61 @@
+@import '../utilities/colors'
+
+$form-bar-color: $primary
+$form-bar-text-color: $white
+
+.material-form
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  background: $white
+  box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12)
+  border-radius: 4px
+  overflow: hidden
+
+.material-form__header
+  padding: 8px 16px 0
+  box-sizing: border-box
+
+.material-form__header--bar
+  padding: 16px
+  background-color: $form-bar-color
+  color: $form-bar-text-color
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12)
+
+.material-form__content
+  box-sizing: border-box
+  padding: 16px
+
+  & .material-textfield-container
+    margin-bottom: 8px
+
+    &:last-child
+      margin-bottom: 0  
+
+.material-form__actions
+  display: flex
+  justify-content: space-between
+  padding: 8px
+
+.material-form__title
+  margin: 0
+
+.material-form-field
+  box-sizing: border-box
+  display: flex
+  align-items: center
+  vertical-align: middle
+  font-family: inherit
+  font-size: 14px
+  line-height: 20px
+  font-weight: 400
+  text-decoration: inherit
+  text-transform: inherit
+  color: $black-alpha-87
+
+  &-label
+    padding-left: 4px
+    margin-right: auto
+    order: 0
+    cursor: pointer
+  

@@ -1,0 +1,22 @@
+@import './variables'
+
+.material-hero
+  display: flex
+  align-items: center
+  justify-content: center
+  min-height: 360px
+  padding: 24px
+  background: #f2f2f2
+
+.material-container
+  box-sizing: border-box
+  max-width: $grid-media-desktop
+  width: 100%
+  margin: 0 auto
+  padding: 0 $grid-margin-desktop
+
+  @media (max-width: $grid-media-tablet)
+    padding: 0 $grid-margin-tablet
+
+  @media (max-width: $grid-media-mobile)
+    padding: 0 $grid-margin-mobile

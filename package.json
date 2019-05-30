@@ -1,0 +1,82 @@
+{
+  "_from": "material-simple",
+  "_id": "material-simple@0.2.16",
+  "_inBundle": false,
+  "_integrity": "sha512-RphI7m917hzlxl2VHmyIGTPEqyc1mWsUrflTlTcNr6IxPIrjbyC6/JoBa8sMYw1eO3mgEI+9BR8z2S8/fe0EJg==",
+  "_location": "/material-simple",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "material-simple",
+    "name": "material-simple",
+    "escapedName": "material-simple",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/material-simple/-/material-simple-0.2.16.tgz",
+  "_shasum": "0f076002151f9f5e9e8c1e4c068ddace1c5a8c9b",
+  "_spec": "material-simple",
+  "_where": "/storage/emulated/legacy",
+  "author": {
+    "name": "Ruslan Povolockii",
+    "email": "devianllert@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/devianllert/material-simple/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Material buttons, inputs and other elements without JS",
+  "devDependencies": {
+    "autoprefixer": "^9.4.3",
+    "clean-css-cli": "^4.2.1",
+    "gulp": "^4.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-rename": "^1.4.0",
+    "node-sass": "^4.11.0",
+    "postcss-cli": "^6.1.0",
+    "rimraf": "^2.6.2"
+  },
+  "files": [
+    "css",
+    "sass",
+    "LICENSE",
+    "README.md"
+  ],
+  "homepage": "https://github.com/devianllert/material-simple",
+  "keywords": [
+    "material-simple",
+    "mtrl",
+    "material",
+    "material elements",
+    "elements",
+    "material design",
+    "css",
+    "css framework"
+  ],
+  "license": "MIT",
+  "main": "sass/mtrl.sass",
+  "name": "material-simple",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devianllert/material-simple.git"
+  },
+  "scripts": {
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss css/**/*.css --use autoprefixer --base css/ --dir css/",
+    "build-clean": "rimraf css",
+    "build-cleancss": "gulp csso",
+    "build-sass": "node-sass --output-style expanded --source-map true sass/ --output ./css/",
+    "deploy": "npm run build",
+    "start": "npm run build-sass -- --watch"
+  },
+  "style": "mtrl/css/mtrl.min.css",
+  "unpkg": "css/mtrl.css",
+  "version": "0.2.16"
+}

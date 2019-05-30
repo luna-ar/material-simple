@@ -1,0 +1,156 @@
+@import '../utilities/colors'
+
+$input-background: $gray__200 !default
+$input-background-hover: $gray__300 !default
+$input-color: $gray__700 !default
+$input-color-focus: $primary !default
+$input-border-color: $gray__400 !default
+$input-border-color-focus: $primary !default
+$input-helper-text-color: $gray__500 !default
+
+.material-textfield-row
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.material-textfield-container
+  min-width: 200px
+
+.material-textfield
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  overflow: hidden
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  height: 56px
+  position: relative
+
+.material-textfield__input
+  box-sizing: border-box
+  font-family: inherit
+  font-size: 16px
+  line-height: 28px
+  width: 100%
+  height: 100%
+  padding: 0 16px
+  border: none
+  border-bottom: 2px solid $input-border-color
+  border-radius: 4px 4px 0 0
+  background: $input-background
+  appearance: none
+  color: $input-color
+  transition: border-color 0.25s ease
+  
+  &::placeholder
+    transition: all 0.25s ease
+
+  &:focus
+    border-color: $input-border-color-focus
+    outline: none
+
+    &::placeholder
+      color: $input-color-focus
+
+.material-textfield__icon
+  position: absolute
+  bottom: 16px
+  color: $input-color
+  pointer-events: none
+  transition: color 0.25s ease
+
+.material-textfield--outlined
+
+  & .material-textfield__input
+    border: 2px solid $input-border-color
+    border-radius: 4px
+    background: transparent
+
+    &:focus
+      border-color: $input-border-color-focus
+
+.material-textfield--shaped
+
+  & + .material-textfield-helper-text
+    margin-left: 32px
+
+  & .material-textfield__input
+    border: 2px solid $input-border-color
+    border-radius: 28px
+    background: transparent
+
+    &:focus
+      border-color: $input-border-color-focus
+
+.material-textfield--leading-icon
+
+  & .material-textfield__icon
+    left: 16px
+
+  & .material-textfield__input
+    padding-left: 48px
+    padding-right: 16px
+
+.material-textfield--trailing-icon
+
+  & .material-textfield__icon
+    right: 16px
+
+  & .material-textfield__input
+    padding-left: 16px
+    padding-right: 48px
+
+.material-textfield--error
+
+  & .material-textfield__icon
+    color: $alert
+
+  & .material-textfield__input
+    border-color: $alert
+
+    &:focus
+      border-color: $alert
+
+    &::placeholder
+      color: $alert
+
+  & + .material-textfield-helper-text
+    color: $alert
+    font-weight: 500
+
+.material-textfield--disabled
+
+  & .material-textfield__input
+    border-color: $gray__500
+    background: $gray__300
+
+    &::placeholder
+      color: $gray__500
+
+  & .material-textfield__icon
+    color: $gray__500
+
+  & + .material-textfield-helper-text
+    color: $gray__500
+
+.material-textfield--full-width
+  width: 100%
+
+.material-textfield--textarea
+  height: auto
+
+  & .material-textfield__input
+    box-sizing: border-box
+    height: auto
+    padding: 4px 16px 16px
+    resize: vertical
+
+.material-textfield-helper-text
+  -webkit-font-smoothing: antialiased
+  display: block
+  margin: 0 12px
+  padding-top: 3px
+  color: rgba(0,0,0,.6)
+  font-size: 12px
+  height: 16px
+  font-weight: 500

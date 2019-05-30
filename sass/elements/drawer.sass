@@ -1,0 +1,87 @@
+@import '../utilities/colors'
+
+$drawer-color: $black-alpha-87
+$drawer-activated-color: $primary
+
+.material-drawer
+  box-sizing: border-box
+  width: 256px
+  height: 100%
+  background-color: #ffffff
+  display: flex
+  flex-direction: column
+  flex-shrink: 0
+  border-radius: 0 0 0 0
+  border-right-width: 1px
+  border-right-style: solid
+  border-color: $black-alpha-12
+  z-index: 6
+
+  & .material-list-item
+    margin: 8px
+    padding: 0 8px
+    height: 40px
+    cursor: pointer
+    font-size: 14px
+    font-weight: 500
+    border-radius: 4px
+    color: $drawer-color
+    overflow: hidden
+
+    &:before
+      border-radius: 4px
+
+    &:first-child
+      margin-top: 2px
+    
+    &:last-child
+      margin-bottom: 0
+
+  & .material-list-item--activated
+    color: rgba($drawer-activated-color,.87)
+
+    &:before
+      background-color: $drawer-activated-color
+      opacity: 0.12
+
+    &:hover:before
+      opacity: 0.16
+
+    &:focus:before
+      opacity: 0.20
+
+    &:active:before
+      opacity: 0.28
+
+    & .material-list-item__icon
+      color: $drawer-activated-color
+
+.material-drawer__header
+  box-sizing: border-box
+  min-height: 64px
+  padding: 16px 16px 4px 16px
+
+.material-drawer__title
+  -webkit-font-smoothing: antialiased
+  color: $black-alpha-87
+  font-size: 20px
+  font-weight: 500
+  text-decoration: inherit
+  text-transform: inherit
+  margin-top: 0
+  margin-bottom: 0
+
+.material-drawer__subtitle
+  -webkit-font-smoothing: antialiased
+  color: $black-alpha-60
+  font-size: 14px
+  font-weight: 400
+  text-decoration: inherit
+  text-transform: inherit
+  margin-top: 0
+  margin-bottom: 0
+
+.material-drawer__content
+  height: 100%
+  overflow-y: auto
+  -webkit-overflow-scrolling: touch

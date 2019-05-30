@@ -1,0 +1,70 @@
+@import '../layout/variables'
+  
+$snackbar-dissmis-color: #bb86fc
+$snackbar-background-color: #333
+$snackbar-text-color: rgba(#fff, 0.87)
+
+.material-snackbar
+  box-sizing: border-box
+  z-index: 10
+  margin: 8px
+  position: fixed
+  right: 0
+  bottom: 0
+  left: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  pointer-events: none
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+
+.material-snackbar__container
+  transform: scale(1)
+  opacity: 1
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  border-radius: 4px
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12)
+  max-width: 672px
+  min-width: 344px
+  background-color: $snackbar-background-color
+  pointer-events: auto
+  will-change: transform, opacity
+
+  @media (max-width: $grid-media-mobile)
+    min-width: 100%
+
+.material-snackbar__label
+  box-sizing: border-box
+  margin: 0
+  letter-spacing: 0.3px
+  color: $snackbar-text-color
+  padding: 14px 16px
+  font-size: 14px
+  line-height: 18px
+  font-weight: 400
+  flex-grow: 1
+
+.material-snackbar__actions
+  box-sizing: border-box
+  margin-left: 0
+  margin-right: 8px
+  display: flex
+  flex-shrink: 0
+  align-items: center
+
+.material-snackbar__dismiss
+  font-size: 18px
+  width: 36px
+  height: 36px
+
+  .material-icons
+    font-size: 18px
+    width: 36px
+
+.material-snackbar__action
+  color: $snackbar-dissmis-color
+
+  &::before
+    background-color: $snackbar-dissmis-color

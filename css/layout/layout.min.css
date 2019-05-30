@@ -1,0 +1,1 @@
+.material-hero{display:flex;align-items:center;justify-content:center;min-height:360px;padding:24px;background:#f2f2f2}.material-container{box-sizing:border-box;max-width:1440px;width:100%;margin:0 auto;padding:0 24px}@media (max-width:840px){.material-container{padding:0 16px}}@media (max-width:480px){.material-container{padding:0 16px}}

@@ -1,0 +1,31 @@
+@import '../utilities/colors'
+
+.material-menu
+  box-sizing: border-box
+  display: inline-block
+  min-width: 112px
+  margin: 0
+  padding: 0
+  background-color: $white
+  color: $black-alpha-87
+  transform: scale(1)
+  transform-origin: top left
+  opacity: 1
+  box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12)
+  border-radius: 4px
+  position: absolute
+  overflow: auto
+  z-index: 8
+  will-change: transform, opacity
+
+  & .material-list-item
+    cursor: pointer
+    user-select: none
+
+  & .material-list-divider
+    margin: 8px 0
+
+.material-menu--open
+  display: inline-block
+  transform: scale(1)
+  opacity: 1

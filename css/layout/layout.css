@@ -1,0 +1,29 @@
+.material-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+  padding: 24px;
+  background: #f2f2f2;
+}
+
+.material-container {
+  box-sizing: border-box;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 840px) {
+  .material-container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .material-container {
+    padding: 0 16px;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Nhc3MvbGF5b3V0L2xheW91dC5zYXNzIiwiLi4vLi4vc2Fzcy9sYXlvdXQvX3ZhcmlhYmxlcy5zYXNzIiwibGF5b3V0LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNFLGNBQWE7RUFDYixvQkFBbUI7RUFDbkIsd0JBQXVCO0VBQ3ZCLGtCQUFpQjtFQUNqQixjQUFhO0VBQ2Isb0JBQW1CO0NBQUc7O0FBRXhCO0VBQ0UsdUJBQXNCO0VBQ3RCLGtCQ1p5QjtFRGF6QixZQUFXO0VBQ1gsZUFBYztFQUNkLGdCQ0h3QjtDRFNhOztBQUpyQztFQVBGO0lBUUksZ0JDTHFCO0dEUWM7Q0VBdEM7O0FGREM7RUFWRjtJQVdJLGdCQ1BxQjtHRE9jO0NFTXRDIiwiZmlsZSI6ImxheW91dC5jc3MifQ== */

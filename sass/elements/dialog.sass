@@ -1,0 +1,86 @@
+@import '../utilities/colors'
+
+$dialog-background-color: $white
+$dialog-title-color: $black-alpha-87
+$dialog-content-color: $black-alpha-60
+
+
+.material-dialog
+  box-sizing: border-box
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 9999
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  width: 100vw
+  height: 100%
+
+  &__container
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    transform: scale(1)
+    opacity: 1
+    background: $dialog-background-color
+    min-width: 280px
+    max-width: 580px
+    max-height: calc(100vh - 32px)
+    border-radius: 4px
+    box-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12)
+
+  &__scrim
+    box-sizing: border-box
+    position: fixed
+    top: 0
+    left: 0
+    z-index: -1
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    opacity: 1
+    background: $black-alpha-32
+
+  &__header
+    padding: 20px 24px 0
+    border-bottom: 1px solid transparent
+
+    &--with-label
+      padding-bottom: 20px
+      border-color: $black-alpha-12
+
+  &__title
+    margin: 0
+    padding: 0
+    font-size: 20px
+    font-weight: 500
+    color: $dialog-title-color
+
+  &__content
+    color: $dialog-content-color
+    font-size: 16px
+    font-weight: 400
+    flex-grow: 1
+    margin: 0
+    padding: 16px 24px
+    line-height: 1.5
+    overflow: auto
+    -webkit-overflow-scrolling: touch
+
+  &__actions
+    display: flex
+    position: relative
+    flex-shrink: 0
+    flex-wrap: wrap
+    align-items: center
+    justify-content: flex-end
+    box-sizing: border-box
+    min-height: 52px
+    margin: 0
+    padding: 8px
+    border-top: 1px solid transparent
+      

@@ -1,0 +1,508 @@
+@import './variables'
+
+.material-grid
+  box-sizing: border-box
+  margin: 0 auto
+  padding: $grid-margin-desktop
+
+  @media (max-width: $grid-media-tablet)
+    padding: $grid-margin-tablet
+
+  @media (max-width: $grid-media-mobile)
+    padding: $grid-margin-mobile
+
+
+.material-grid__container
+  display: flex
+  flex-flow: row wrap
+  align-items: stretch
+  margin: -12px
+  margin: calc(#{$grid-gutter-desktop} / 2 * -1)
+
+  @media (max-width: $grid-media-tablet)
+    margin: -8px
+    margin: calc(#{$grid-gutter-tablet} / 2 * -1)
+
+  @media (max-width: $grid-media-mobile)
+    margin: -8px
+    margin: calc(#{$grid-gutter-tablet} / 2 * -1)
+
+  @supports (display: grid)
+    display: grid
+    margin: 0
+    grid-gap: $grid-gutter-desktop
+    grid-template-columns: repeat(#{$grid-columns-desktop}, minmax(0, 1fr))
+
+    @media (max-width: $grid-media-tablet)
+      grid-gap: $grid-gutter-tablet
+      grid-template-columns: repeat(#{$grid-columns-tablet}, minmax(0, 1fr))
+
+    @media (max-width: $grid-media-mobile)
+      grid-gap: $grid-gutter-mobile
+      grid-template-columns: repeat(#{$grid-columns-mobile}, minmax(0, 1fr))
+
+.material-grid__cell
+  box-sizing: border-box
+  width: calc(33.33333% - #{$grid-gutter-desktop})
+  margin: calc(#{$grid-gutter-desktop} / 2)
+
+  @supports (display: grid)
+    width: auto
+    grid-column-end: span 4
+    margin: 0
+
+  &--span-1, &--span-1-desktop
+    width: calc(8.33333% - #{$grid-gutter-desktop})
+
+    @supports (display: grid)
+      width: auto
+      grid-column-end: span 1
+
+  &--span-2, &--span-2-desktop
+    width: calc(16.66667% - #{$grid-gutter-desktop})
+
+    @supports (display: grid)
+      width: auto
+      grid-column-end: span 2
+
+  &--span-3, &--span-3-desktop
+    width: calc(25% - #{$grid-gutter-desktop})
+
+    @supports (display: grid)
+      width: auto
+      grid-column-end: span 3
+
+  &--span-4, &--span-4-desktop
+    width: calc(33.33333% - #{$grid-gutter-desktop})
+
+    @supports (display: grid)
+      width: auto
+      grid-column-end: span 4
+
+  &--span-5, &--span-5-desktop
+    width: calc(41.66667% - #{$grid-gutter-desktop})
+
+    @supports (display: grid)
+      width: auto
+      grid-column-end: span 5
+
+  &--span-6, &--span-6-desktop
+    width: calc(50% - #{$grid-gutter-desktop})
+
+    @supports (display: grid)
+      width: auto
+      grid-column-end: span 6
+
+  &--span-7, &--span-7-desktop
+    width: calc(58.33333% - #{$grid-gutter-desktop})
+
+    @supports (display: grid)
+      width: auto
+      grid-column-end: span 7
+
+  &--span-8, &--span-8-desktop
+    width: calc(66.66667% - #{$grid-gutter-desktop})
+
+    @supports (display: grid)
+      width: auto
+      grid-column-end: span 8
+
+  &--span-9, &--span-9-desktop
+    width: calc(75% - #{$grid-gutter-desktop})
+
+    @supports (display: grid)
+      width: auto
+      grid-column-end: span 9
+
+  &--span-10, &--span-10-desktop
+    width: calc(83.33333% - #{$grid-gutter-desktop})
+
+    @supports (display: grid)
+      width: auto
+      grid-column-end: span 10
+
+  &--span-11, &--span-11-desktop
+    width: calc(91.66667% - #{$grid-gutter-desktop})
+
+    @supports (display: grid)
+      width: auto
+      grid-column-end: span 11
+
+  &--span-12, &--span-12-desktop
+    width: calc(100% - #{$grid-gutter-desktop})
+
+    @supports (display: grid)
+      width: auto
+      grid-column-end: span 12
+
+@media (max-width: $grid-media-tablet)
+  .material-grid__cell
+    width: calc(50% - #{$grid-gutter-tablet})
+
+    @supports (display: grid)
+      width: auto
+      grid-column-end: span 4
+
+    &--span-1
+      width: calc(8.33333% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 1
+
+    &--span-2
+      width: calc(16.66667% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 2
+
+    &--span-3
+      width: calc(25% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 3
+
+    &--span-4
+      width: calc(33.33333% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-5
+      width: calc(41.66667% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 5
+
+    &--span-6
+      width: calc(50% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 6
+
+    &--span-7
+      width: calc(58.33333% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 7
+
+    &--span-8
+      width: calc(66.66667% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 8
+
+    &--span-9
+      width: calc(75% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 8
+
+    &--span-10
+      width: calc(83.33333% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 8
+
+    &--span-11
+      width: calc(91.66667% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 8
+
+    &--span-12
+      width: calc(100% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 8
+
+@media (max-width: $grid-media-mobile)
+  .material-grid__cell
+    width: calc(50% - #{$grid-gutter-mobile})
+
+    @supports (display: grid)
+      width: auto
+      grid-column-end: span 4
+
+    &--span-1
+      width: calc(8.33333% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 1
+
+    &--span-2
+      width: calc(16.66667% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 2
+
+    &--span-3
+      width: calc(25% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 3
+
+    &--span-4
+      width: calc(33.33333% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-5
+      width: calc(41.66667% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-6
+      width: calc(50% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-7
+      width: calc(58.33333% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-8
+      width: calc(66.66667% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-9
+      width: calc(75% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-10
+      width: calc(83.33333% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-11
+      width: calc(91.66667% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-12
+      width: calc(100% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+
+// #TABLET CLASSES
+@media (max-width: $grid-media-tablet)
+  .material-grid__cell
+    width: calc(50% - #{$grid-gutter-tablet})
+
+    @supports (display: grid)
+      width: auto
+      grid-column-end: span 4
+
+    &--span-1-tablet
+      width: calc(8.33333% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 1
+
+    &--span-2-tablet
+      width: calc(16.66667% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 2
+
+    &--span-3-tablet
+      width: calc(25% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 3
+
+    &--span-4-tablet
+      width: calc(33.33333% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-5-tablet
+      width: calc(41.66667% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 5
+
+    &--span-6-tablet
+      width: calc(50% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 6
+
+    &--span-7-tablet
+      width: calc(58.33333% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 7
+
+    &--span-8-tablet
+      width: calc(66.66667% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 8
+
+    &--span-9-tablet
+      width: calc(75% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 8
+
+    &--span-10-tablet
+      width: calc(83.33333% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 8
+
+    &--span-11-tablet
+      width: calc(91.66667% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 8
+
+    &--span-12-tablet
+      width: calc(100% - #{$grid-gutter-tablet})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 8
+
+
+// #MOBILE CLASSES
+@media (max-width: $grid-media-mobile)
+  .material-grid__cell
+    width: calc(50% - #{$grid-gutter-mobile})
+
+    @supports (display: grid)
+      width: auto
+      grid-column-end: span 4
+
+    &--span-1-mobile
+      width: calc(8.33333% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 1
+
+    &--span-2-mobile
+      width: calc(16.66667% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 2
+
+    &--span-3-mobile
+      width: calc(25% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 3
+
+    &--span-4-mobile
+      width: calc(33.33333% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-5-mobile
+      width: calc(41.66667% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-6-mobile
+      width: calc(50% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-7-mobile
+      width: calc(58.33333% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-8-mobile
+      width: calc(66.66667% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-9-mobile
+      width: calc(75% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-10-mobile
+      width: calc(83.33333% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-11-mobile
+      width: calc(91.66667% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
+
+    &--span-12-mobile
+      width: calc(100% - #{$grid-gutter-mobile})
+
+      @supports (display: grid)
+        width: auto
+        grid-column-end: span 4
